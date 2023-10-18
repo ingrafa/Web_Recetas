@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recetas Culinarias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recetas Culinarias</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h2>Bienvenido a Nuestra Página de Recetas Culinarias</h2>
+                <p>Descubre una variedad de deliciosas recetas de todo el mundo.</p>
+                <img src="https://via.placeholder.com/400" alt="Imagen de muestra" id="inicio-img">
+            </div>
+        </section>
+
+        <section id="recetas">
+            <div class="container">
+                <h2>Nuestras Recetas Destacadas</h2>
+                <input type="text" id="buscar-receta" placeholder="Buscar receta por nombre">
+                <ul id="lista-recetas">
+                    <!-- Las recetas agregadas por el usuario se mostrarán aquí -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos un equipo apasionado de chefs que comparten su amor por la buena comida y la cocina creativa.</p>
+                <img src="https://via.placeholder.com/400" alt="Imagen de muestra" id="nosotros-img">
+            </div>
+        </section>
+
+        <section id="enviar-receta">
+            <div class="container">
+                <h2>Enviar tu Receta</h2>
+                <form id="formulario-receta">
+                    <label for="nombre-receta">Nombre de la Receta:</label><br>
+                    <input type="text" id="nombre-receta" name="nombre-receta"><br><br>
+                    <label for="ingredientes">Ingredientes:</label><br>
+                    <textarea id="ingredientes" name="ingredientes"></textarea><br><br>
+                    <label for="pasos">Pasos:</label><br>
+                    <textarea id="pasos" name="pasos"></textarea><br><br>
+                    <input type="button" value="Enviar Receta" id="enviar-btn">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Página de Recetas Culinarias</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
